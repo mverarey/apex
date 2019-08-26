@@ -112,7 +112,10 @@ The following additional policies are needed to set VPC for your Lambda function
       "Action": [
         "ec2:DescribeSecurityGroups",
         "ec2:DescribeSubnets",
-        "ec2:DescribeVpcs"
+        "ec2:DescribeVpcs",
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DeleteNetworkInterface"
       ],
       "Effect": "Allow",
       "Resource": "*"
